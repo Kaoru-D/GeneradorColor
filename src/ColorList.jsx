@@ -1,8 +1,12 @@
 import React from 'react'
 
-const ColorList = () => {
+const ColorList = ({colors}) => {
+
+
   return (
-    <div>ColorList</div>
+    <section>
+        {colors.map(map)}
+    </section>
   )
 }
 

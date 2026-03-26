@@ -1,11 +1,14 @@
-import React from 'react'
+import { nanoid } from 'nanoid';
+import OneColor from './OneColor';
 
 const ColorList = ({colors}) => {
 
 
   return (
-    <section>
-        {colors.map(map)}
+    <section className='colors'>
+        {colors.map((color, index) => {
+          return  <OneColor key={nanoid()} color={color} index={index}/>;
+        })}
     </section>
   )
 }

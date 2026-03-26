@@ -6,8 +6,8 @@ const ColorList = ({colors}) => {
 
   return (
     <section className='colors'>
-        {colors.map((color, index) => {
-          return  <OneColor key={nanoid()} color={color} index={index}/>;
+        {colors.map((color) => {
+          return  <OneColor key={nanoid()} color={color} />;
         })}
     </section>
   )
